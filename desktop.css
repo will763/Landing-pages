@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  height: 100vh;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 34em;
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: 100% 100%;
+}
+
+body main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main header svg {
+  width: 50%;
+  margin: 2em 0 0 1.5em;
+}
+
+body main header #menu {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main header #menu svg {
+  display: none;
+}
+
+body main header #menu #hamburger ul {
+  padding-top: 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body main header #menu #hamburger ul li {
+  color: white;
+  padding-top: 0.8em;
+  font-size: 0.8em;
+  margin-right: 2.8em;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+body main header #menu #hamburger ul li:last-child {
+  font-family: 'Vollkorn SC', serif;
+  font-weight: 700;
+  font-size: 1em;
+  padding-top: 0.35em;
+  width: 7em;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 8em;
+}
+
+body main header #menu #hamburger ul li:last-child:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+body main h1 {
+  font-family: 'Vollkorn SC', serif;
+  font-weight: 900;
+  color: white;
+  margin-top: 1em;
+  font-size: 4em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body main #svg_Arrow {
+  margin-top: 2.8em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body main #svg_Arrow svg {
+  margin-left: 4.2em;
+  height: 6em;
+}
+
+body #articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 0;
+}
+
+body #articles #photography {
+  color: #19536b;
+  position: relative;
+  background-image: url("./images/desktop/image-photography.jpg");
+  background-size: 100% 100%;
+}
+
+body #articles #photography h3 {
+  color: #19536b;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+}
+
+body #articles #photography p {
+  color: #19536b;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+body #articles #graphic {
+  color: #19536b;
+  background-image: url("./images/desktop/image-graphic-design.jpg");
+  background-size: 100% 100%;
+}
+
+body #articles #graphic h3 {
+  color: #25564b;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+}
+
+body #articles #graphic p {
+  color: #25564b;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  margin-bottom: 4em;
+}
+
+body #articles article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #articles article #h1First {
+  margin-right: 2.2em;
+  margin-left: 3.83em;
+}
+
+body #articles article h1 {
+  margin: 0 0 .5em 3.8em;
+  font-size: 2em;
+  font-family: 'Vollkorn SC', serif;
+  font-weight: 900;
+}
+
+body #articles article p {
+  margin: 0 8em 0 8.6em;
+  line-height: 1.3em;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  color: #818498;
+  font-size: .9em;
+}
+
+body #articles article #first, body #articles article #second {
+  margin-top: 3em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 8em;
+  cursor: pointer;
+  font-family: 'Vollkorn SC', serif;
+  font-weight: 900;
+}
+
+body #articles article #first::after {
+  margin-left: -7em;
+  content: ".";
+  background-color: #fad400;
+  position: absolute;
+  height: .5em;
+  width: 7.5em;
+  border-radius: 8em;
+  margin-top: .7em;
+  color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+body #articles article #first:hover::after {
+  opacity: 1;
+}
+
+body #articles article #second::after {
+  margin-left: -7em;
+  content: ".";
+  background-color: #fe7867;
+  position: absolute;
+  height: .5em;
+  width: 7.5em;
+  border-radius: 8em;
+  margin-top: .7em;
+  color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+body #articles article #second:hover::after {
+  opacity: 1;
+}
+
+body #articles article img {
+  width: 100%;
+  height: 100%;
+}
+
+body #articles article .titleParagraph {
+  text-align: center;
+  margin-top: 18em;
+  margin-bottom: 1.2em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+body #articles article .paragraph {
+  margin: 0 0 4em 0;
+  text-align: center;
+  font-size: .9em;
+  line-height: 1.5em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+body #images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #images img {
+  width: 25%;
+}
+
+body footer {
+  height: 16em;
+  background-color: #458c7e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer svg {
+  margin: 2.6em 0 1.8em 0;
+}
+
+body footer .icons-effect:hover path {
+  fill: #ffffff;
+}
+
+body footer #informations span {
+  text-align: center;
+  font-size: 0.79em;
+  margin: 0 1em 0 1em;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 100;
+  color: #2C7566;
+}
+
+body footer #informations span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+body footer #icons {
+  margin-top: 4em;
+}
+
+body footer #icons svg {
+  margin: 0 .5em 0 .5em;
+}
+
+body #clientTestimonials {
+  height: 30em;
+}
+
+body #clientTestimonials h1 {
+  font-family: 'Vollkorn SC', serif;
+  font-weight: 900;
+  margin-top: 5em;
+  margin-bottom: 2.5em;
+  text-align: center;
+  color: #a7abae;
+}
+
+body #clientTestimonials #clients {
+  margin-right: 10em;
+  margin-left: 10em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-column-gap: 1.5em;
+          column-gap: 1.5em;
+}
+
+body #clientTestimonials .clientsInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #clientTestimonials .clientsInformation img {
+  margin-bottom: 2.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 4em;
+  border-radius: 50%;
+}
+
+body #clientTestimonials .clientsInformation p {
+  font-size: .9em;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 100;
+  color: gray;
+}
+
+body #clientTestimonials .clientsInformation .perfil {
+  margin-top: 4em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+body #clientTestimonials .clientsInformation .perfil h4 {
+  font-family: 'Vollkorn SC', serif;
+  font-weight: 900;
+  font-size: .9em;
+}
+
+body #clientTestimonials .clientsInformation .perfil span {
+  font-size: .7em;
+  color: #818498;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 100;
+}
+/*# sourceMappingURL=desktop.css.map */

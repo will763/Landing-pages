@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700;900&display=swap');
+//font-family: 'Vollkorn SC', serif;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&display=swap');
+//font-family: 'Barlow', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+   
+    font-size: 18px;
+    height: 100vh;
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 34em;
+        background-image: url("./images/desktop/image-header.jpg");
+        background-size: 100% 100%;
+
+
+        header {
+                
+                display: flex;
+            
+                
+
+             svg {
+                 width: 50%;
+                 margin: 2em 0 0 1.5em;
+                
+                }
+                #menu {
+                  width: 50%;
+                  display: flex;
+                  justify-content: flex-end;
+
+                  svg {
+                      display: none;
+                  }
+                  #hamburger{ 
+                ul {
+                    padding-top: 1.3em;
+                    display: flex;    
+                    list-style:none;
+
+                    li {
+                     color: hsl(0, 0%, 100%);
+                     padding-top: 0.8em;
+                     font-size: 0.8em;
+                     margin-right: 2.8em;
+                     font-family: 'Barlow', sans-serif;
+                     font-weight: 600;
+                    
+                    
+                    }
+                    li:last-child{
+                        font-family: 'Vollkorn SC', serif;
+                        font-weight: 700;
+                        font-size: 1em;
+                        padding-top: 0.35em;
+                        width: 7em;
+                        text-align: center;
+                        color: black;
+                        background-color:hsl(0, 0%, 100%);
+                        border-radius: 8em;
+                    }
+                    li:last-child:hover{
+                        color:hsl(0, 0%, 100%);
+                        background-color: hsla(0, 0%, 100%, 0.4);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+        h1 {
+           font-family: 'Vollkorn SC', serif;
+           font-weight: 900;
+           color: white;
+           margin-top: 1em;
+           font-size: 4em;
+           align-self: center;
+        }
+        #svg_Arrow {
+           margin-top: 2.8em;
+           align-self: center;
+
+           svg{
+               margin-left: 4.2em;
+               height: 6em;
+           }
+           
+        }
+    }
+        
+        #articles { 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0;
+
+        #photography { 
+            color: hsl(198, 62%, 26%);
+            position: relative;
+            background-image: url("./images/desktop/image-photography.jpg" );
+            background-size: 100% 100%;
+
+            h3 {
+                color: hsl(198, 62%, 26%);
+                font-family: 'Barlow', sans-serif;
+                font-weight:800;
+               
+            }
+            p{
+
+                color: hsl(198, 62%, 26%);
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+            }
+
+        }
+        #graphic {
+            color:  hsl(198, 62%, 26%);
+            background-image: url("./images/desktop/image-graphic-design.jpg");
+            background-size: 100% 100%;
+            h3 {
+                color: hsl(167, 40%, 24%);
+                font-family: 'Barlow', sans-serif;
+                font-weight: 800;
+            }
+            p {
+                color: hsl(167, 40%, 24%);
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+                margin-bottom: 4em;
+            }
+            
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            #h1First {
+                margin-right: 2.2em;
+                margin-left: 3.83em;
+            }
+
+            h1 {
+             margin:0 0 .5em 3.8em;
+             font-size: 2em;
+             font-family: 'Vollkorn SC', serif;
+             font-weight: 900;
+            }
+
+            p{
+                margin: 0 8em 0 8.6em;
+                line-height: 1.3em;
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+                color: hsl(232, 10%, 55%);
+                font-size: .9em;
+                
+            }
+            #first,#second{
+              margin-top: 3em;
+              align-self: flex-start;
+              margin-left: 8em;
+              cursor: pointer;
+              font-family: 'Vollkorn SC', serif;
+              font-weight: 900;
+            }
+            #first::after{
+                margin-left: -7em;
+                content: ".";
+                background-color:hsl(51, 100%, 49%);
+                position: absolute;
+                height: .5em;
+                width: 7.5em;
+                border-radius: 8em;
+                margin-top: .7em;
+                color: rgba(0, 0,0, 0);
+                z-index: -1;
+                opacity: 0.4;
+            }
+
+            #first:hover::after {
+                opacity: 1;
+                
+            }
+            #second::after{
+                margin-left: -7em;
+                content: ".";
+                background-color: hsl(7, 99%, 70%);
+                position: absolute;
+                height: .5em;
+                width: 7.5em;
+                border-radius: 8em;
+                margin-top: .7em;
+                color: rgba(0, 0,0, 0);
+                z-index: -1;
+                opacity: 0.4;
+            }
+            #second:hover::after{
+                opacity: 1;
+            }
+            
+
+            img {
+               width: 100%;
+               height: 100%;
+            }
+            .titleParagraph { 
+                text-align: center;
+                margin-top: 18em;
+                margin-bottom: 1.2em;
+                 margin-left: 10em;
+                margin-right: 10em;
+                
+                
+               }
+               .paragraph {
+                margin: 0 0 4em 0;
+                text-align: center;        
+                font-size: .9em; 
+                line-height: 1.5em;
+                margin-left: 10em;
+                margin-right: 10em;
+               }
+        }
+    }
+            #images { 
+            
+                display: flex;
+
+                img {
+                   width: 25%;
+                }
+            }
+
+            footer {
+                height: 16em;
+                background-color: hsl(168, 34%, 41%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+             
+
+                svg {
+                    margin:2.6em 0 1.8em 0 ;
+                }
+            .icons-effect:hover path {
+                fill: #ffffff;
+            }
+                
+
+                #informations span {
+                    text-align: center;
+                    font-size: 0.79em;
+                    margin: 0 1em 0 1em;
+                    font-family: 'Barlow', sans-serif;
+                    font-weight: 100;
+                    color: #2C7566;
+                }
+                #informations span:hover {
+                    color: white;
+                    cursor: pointer;
+                }
+                #icons {
+                    margin-top: 4em;
+
+                    svg {
+    
+                        margin: 0 .5em 0 .5em;
+                    }
+                } 
+
+            }
+            #clientTestimonials {
+                height: 30em;
+                
+    
+
+                h1 {
+                    font-family: 'Vollkorn SC', serif;
+                    font-weight: 900;
+                    margin-top: 5em;
+                    margin-bottom: 2.5em;
+                    text-align: center;
+                    color:   hsl(210, 4%, 67%);
+                }
+                #clients{
+                    margin-right: 10em;
+                    margin-left: 10em;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    justify-items: center;   
+                    column-gap: 1.5em;     
+                }
+              
+                .clientsInformation{
+                
+                    display: flex;
+                    flex-direction: column;
+                    
+                    
+                    img { 
+                          margin-bottom: 2.5em;
+                          align-self: center;
+                          width: 4em;
+                          border-radius: 50%;
+                    }
+                    p {
+                        font-size: .9em;
+                        text-align:center;
+                        font-family: 'Barlow', sans-serif;
+                        font-weight: 100;
+                        color: gray;
+                    }
+                    .perfil{
+                        margin-top: 4em;
+                        text-align: center;
+                        line-height: 1.5em;
+                        h4 {
+                            font-family: 'Vollkorn SC', serif;
+                            font-weight: 900;
+                            font-size: .9em;
+                        }
+                        span {
+                            font-size: .7em;
+                            color: hsl(232, 10%, 55%);
+                            font-family: 'Barlow', sans-serif;
+                            font-weight: 100;
+                        }
+                    }
+               }
+       }
+}
